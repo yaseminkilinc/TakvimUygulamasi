@@ -75,7 +75,6 @@
             this.islemZamani.Name = "islemZamani";
             this.islemZamani.Size = new System.Drawing.Size(200, 22);
             this.islemZamani.TabIndex = 1;
-            this.islemZamani.ValueChanged += new System.EventHandler(this.islemZamani_ValueChanged);
             // 
             // olayBaslangic1
             // 
@@ -389,7 +388,6 @@
             this.Controls.Add(this.islemZmn1);
             this.Name = "CalendarScreen";
             this.Text = "CalendarScreen";
-            this.Load += new System.EventHandler(this.CalendarScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

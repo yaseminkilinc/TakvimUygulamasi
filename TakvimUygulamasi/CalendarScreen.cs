@@ -14,7 +14,7 @@ namespace TakvimUygulamasi
 {
     public partial class CalendarScreen : Form
     {
-        static string constring = ("Data Source=DESKTOP-JO113JK\\SQLEXPRESS;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
+        static string constring = ("Data Source=ALIIHSAND;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
         SqlConnection connect = new SqlConnection(constring);
         public string ActiveTime;
         public string FinishTime;
@@ -73,14 +73,7 @@ namespace TakvimUygulamasi
             time1730.BackColor = Color.White;
             time1830.BackColor = Color.White;
         }
-
-
-        private void CalendarScreen_Load(object sender, EventArgs e)
-        {
-           
-        }    
-
-       
+   
         //Başlangıç zamanı belirleme
         private void time09_Click(object sender, EventArgs e)
         {
@@ -108,13 +101,6 @@ namespace TakvimUygulamasi
             time11.BackColor = Color.Chartreuse;
             ActiveTime = "11.00";
         }
-
-        //Başlangıç zamanı belirleme
-        private void islemZamani_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //Başlangıç zamanı belirleme
         private void time13_Click(object sender, EventArgs e)
         {
@@ -273,9 +259,6 @@ namespace TakvimUygulamasi
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            {
-
             }
         }
 

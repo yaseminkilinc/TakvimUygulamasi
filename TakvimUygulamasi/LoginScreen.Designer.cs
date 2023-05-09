@@ -91,7 +91,6 @@ namespace TakvimUygulamasi
             this.tabLoginPage.TabIndex = 0;
             this.tabLoginPage.Text = "Giriş Yap";
             this.tabLoginPage.UseVisualStyleBackColor = true;
-            this.tabLoginPage.Click += new System.EventHandler(this.tabLoginPage_Click);
             // 
             // btnLogin
             // 
