@@ -21,7 +21,8 @@ namespace TakvimUygulamasi
         public CalendarScreen()
         {
             InitializeComponent();
-        }   
+        }
+        int clockDif = 0;
 
         private void EnableChange()
         {
@@ -72,24 +73,47 @@ namespace TakvimUygulamasi
             time1630.BackColor = Color.White;
             time1730.BackColor = Color.White;
             time1830.BackColor = Color.White;
+            time1930.BackColor = Color.White;
         }
    
         //Başlangıç zamanı belirleme
         private void time09_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time09.BackColor == Color.Chartreuse)
+            {
+                time09.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time09.BackColor = Color.Chartreuse;
             ActiveTime = "09.00";
+            clockDif = 1;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time10_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time10.BackColor == Color.Chartreuse)
+            {
+                time10.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time10.BackColor = Color.Chartreuse;
             ActiveTime = "10.00";
+            clockDif = 2;
+            islemZamani.Enabled = false;
 
         }
 
@@ -97,68 +121,150 @@ namespace TakvimUygulamasi
         private void time11_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time11.BackColor == Color.Chartreuse)
+            {
+                time11.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time11.BackColor = Color.Chartreuse;
             ActiveTime = "11.00";
+            clockDif = 3;
+            islemZamani.Enabled = false;
         }
         //Başlangıç zamanı belirleme
         private void time13_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time13.BackColor == Color.Chartreuse)
+            {
+                time13.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time13.BackColor = Color.Chartreuse;
             ActiveTime = "13.00";
+            clockDif = 4;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time14_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time14.BackColor == Color.Chartreuse)
+            {
+                time14.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time14.BackColor = Color.Chartreuse;
             ActiveTime = "14.00";
+            clockDif = 5;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time15_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time15.BackColor == Color.Chartreuse)
+            {
+                time15.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time15.BackColor = Color.Chartreuse;
             ActiveTime = "15.00";
+            clockDif = 6;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time16_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time16.BackColor == Color.Chartreuse)
+            {
+                time16.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time16.BackColor = Color.Chartreuse;
             ActiveTime = "16.00";
+            clockDif = 7;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time17_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time17.BackColor == Color.Chartreuse)
+            {
+                time17.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time17.BackColor = Color.Chartreuse;
             ActiveTime = "17.00";
+            clockDif = 8;
+            islemZamani.Enabled = false;
         }
 
         //Başlangıç zamanı belirleme
         private void time18_Click(object sender, EventArgs e)
         {
             EnableChange();
+            if (time18.BackColor == Color.Chartreuse)
+            {
+                time18.BackColor = Color.White;
+                clockDif = 0;
+                ActiveTime = null;
+                islemZamani.Enabled = true;
+                return;
+            }
             ColorChange();
+            ColorChange2();
             time18.BackColor = Color.Chartreuse;
             ActiveTime = "18.00";
+            clockDif = 9;
+            islemZamani.Enabled = false;
         }
 
         //Bitiş zamanı belirleme
         private void time1030_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 2)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1030.BackColor = Color.IndianRed;
             FinishTime = "10.30";
@@ -168,6 +274,11 @@ namespace TakvimUygulamasi
         private void time1130_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 3)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1130.BackColor = Color.IndianRed;
             FinishTime = "11.30";
@@ -177,6 +288,11 @@ namespace TakvimUygulamasi
         private void time1330_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 4)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1330.BackColor = Color.IndianRed;
             FinishTime = "13.30";
@@ -186,6 +302,11 @@ namespace TakvimUygulamasi
         private void time1430_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 5)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1430.BackColor = Color.IndianRed;
             FinishTime = "14.30";
@@ -195,6 +316,11 @@ namespace TakvimUygulamasi
         private void time1530_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 6)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1530.BackColor = Color.IndianRed;
             FinishTime = "15.30";
@@ -204,6 +330,11 @@ namespace TakvimUygulamasi
         private void time1630_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 7)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1630.BackColor = Color.IndianRed;
             FinishTime = "16.30";
@@ -213,6 +344,11 @@ namespace TakvimUygulamasi
         private void time1730_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 8)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1730.BackColor = Color.IndianRed;
             FinishTime = "17.30";
@@ -222,6 +358,11 @@ namespace TakvimUygulamasi
         private void time1830_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 9)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
             time1830.BackColor = Color.IndianRed;
             FinishTime = "18.30";
@@ -266,8 +407,13 @@ namespace TakvimUygulamasi
         private void time1930_Click(object sender, EventArgs e)
         {
             EnableChange2();
+            if (clockDif > 10)
+            {
+                MessageBox.Show("Geçersiz Zaman Dilimi!!!");
+                return;
+            }
             ColorChange2();
-            time1730.BackColor = Color.IndianRed;
+            time1930.BackColor = Color.IndianRed;
             FinishTime = "19.30";
         }
     }
