@@ -14,7 +14,7 @@ namespace TakvimUygulamasi
 {
     public partial class loginScreen : Form
     {
-        static string constring = ("Data Source=ALIIHSAND;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
+        static string constring = ("Data Source=BEYZAYOLDAS;Initial Catalog = TakvimUygulamasi; Integrated Security = True");
         SqlConnection connect = new SqlConnection(constring);
         public loginScreen()
         {
@@ -179,6 +179,16 @@ namespace TakvimUygulamasi
             {
                 MessageBox.Show("Hata!!!" + ea.Message);
             }
+        }
+
+        private void loginScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabLoginPage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

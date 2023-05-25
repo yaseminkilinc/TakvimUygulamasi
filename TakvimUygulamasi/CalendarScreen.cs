@@ -14,7 +14,7 @@ namespace TakvimUygulamasi
 {
     public partial class CalendarScreen : Form
     {
-        static string constring = ("Data Source=ALIIHSAND;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
+        static string constring = ("Data Source=BEYZAYOLDAS;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
         SqlConnection connect = new SqlConnection(constring);
         public string ActiveTime;
         public string FinishTime;
@@ -395,6 +395,12 @@ namespace TakvimUygulamasi
                     cmnd1.Parameters.AddWithValue("@aciklama", aciklama.Text);
                     cmnd1.ExecuteNonQuery();
                     MessageBox.Show("Kaydedildi!");
+                    //Üçüncü form burada açılacak
+                    ScreenActivity f3 = new ScreenActivity();
+                    f3.Hide();
+                    f3.Show();
+                    
+
                 }
             }
             catch (Exception ex)
@@ -415,6 +421,11 @@ namespace TakvimUygulamasi
             ColorChange2();
             time1930.BackColor = Color.IndianRed;
             FinishTime = "19.30";
+        }
+
+        private void CalendarScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

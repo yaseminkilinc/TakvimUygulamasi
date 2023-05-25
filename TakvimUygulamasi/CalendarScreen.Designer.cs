@@ -388,6 +388,7 @@
             this.Controls.Add(this.islemZmn1);
             this.Name = "CalendarScreen";
             this.Text = "CalendarScreen";
+            this.Load += new System.EventHandler(this.CalendarScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
