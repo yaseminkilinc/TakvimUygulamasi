@@ -91,7 +91,6 @@ namespace TakvimUygulamasi
             this.tabLoginPage.TabIndex = 0;
             this.tabLoginPage.Text = "Giriş Yap";
             this.tabLoginPage.UseVisualStyleBackColor = true;
-            this.tabLoginPage.Click += new System.EventHandler(this.tabLoginPage_Click);
             // 
             // btnLogin
             // 
@@ -141,7 +140,7 @@ namespace TakvimUygulamasi
             // 
             this.lblLoginUserName.AutoSize = true;
             this.lblLoginUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLoginUserName.Location = new System.Drawing.Point(132, 170);
+            this.lblLoginUserName.Location = new System.Drawing.Point(138, 169);
             this.lblLoginUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoginUserName.Name = "lblLoginUserName";
             this.lblLoginUserName.Size = new System.Drawing.Size(157, 29);
@@ -208,7 +207,7 @@ namespace TakvimUygulamasi
             // 
             this.lblSignAdminPassword.AutoSize = true;
             this.lblSignAdminPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignAdminPassword.Location = new System.Drawing.Point(577, 134);
+            this.lblSignAdminPassword.Location = new System.Drawing.Point(558, 139);
             this.lblSignAdminPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignAdminPassword.Name = "lblSignAdminPassword";
             this.lblSignAdminPassword.Size = new System.Drawing.Size(161, 29);
@@ -220,11 +219,11 @@ namespace TakvimUygulamasi
             // 
             this.lblSignUserType.AutoSize = true;
             this.lblSignUserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignUserType.Location = new System.Drawing.Point(577, 34);
+            this.lblSignUserType.Location = new System.Drawing.Point(558, 36);
             this.lblSignUserType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignUserType.Name = "lblSignUserType";
             this.lblSignUserType.Size = new System.Drawing.Size(164, 29);
-            this.lblSignUserType.TabIndex = 20;
+            this.lblSignUserType.TabIndex = 19;
             this.lblSignUserType.Text = "Kullanıcı Tipi :";
             // 
             // cmbUserType
@@ -238,7 +237,7 @@ namespace TakvimUygulamasi
             this.cmbUserType.Margin = new System.Windows.Forms.Padding(4);
             this.cmbUserType.Name = "cmbUserType";
             this.cmbUserType.Size = new System.Drawing.Size(196, 37);
-            this.cmbUserType.TabIndex = 19;
+            this.cmbUserType.TabIndex = 20;
             this.cmbUserType.TextChanged += new System.EventHandler(this.cmbUserType_TextChanged);
             // 
             // txtSignAddress
@@ -256,7 +255,7 @@ namespace TakvimUygulamasi
             // 
             this.lblSignAddress.AutoSize = true;
             this.lblSignAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignAddress.Location = new System.Drawing.Point(53, 335);
+            this.lblSignAddress.Location = new System.Drawing.Point(145, 335);
             this.lblSignAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignAddress.Name = "lblSignAddress";
             this.lblSignAddress.Size = new System.Drawing.Size(88, 29);
@@ -277,7 +276,7 @@ namespace TakvimUygulamasi
             // 
             this.lblSignEmail.AutoSize = true;
             this.lblSignEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignEmail.Location = new System.Drawing.Point(53, 292);
+            this.lblSignEmail.Location = new System.Drawing.Point(147, 293);
             this.lblSignEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignEmail.Name = "lblSignEmail";
             this.lblSignEmail.Size = new System.Drawing.Size(86, 29);
@@ -292,18 +291,18 @@ namespace TakvimUygulamasi
             this.txtSignSurname.MaxLength = 32;
             this.txtSignSurname.Name = "txtSignSurname";
             this.txtSignSurname.Size = new System.Drawing.Size(247, 34);
-            this.txtSignSurname.TabIndex = 14;
+            this.txtSignSurname.TabIndex = 6;
             this.txtSignSurname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyLetter);
             // 
             // lblSignSurname
             // 
             this.lblSignSurname.AutoSize = true;
             this.lblSignSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignSurname.Location = new System.Drawing.Point(53, 78);
+            this.lblSignSurname.Location = new System.Drawing.Point(140, 79);
             this.lblSignSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignSurname.Name = "lblSignSurname";
             this.lblSignSurname.Size = new System.Drawing.Size(93, 29);
-            this.lblSignSurname.TabIndex = 13;
+            this.lblSignSurname.TabIndex = 5;
             this.lblSignSurname.Text = "Soyad :";
             // 
             // txtSignUserName
@@ -314,17 +313,17 @@ namespace TakvimUygulamasi
             this.txtSignUserName.MaxLength = 32;
             this.txtSignUserName.Name = "txtSignUserName";
             this.txtSignUserName.Size = new System.Drawing.Size(247, 34);
-            this.txtSignUserName.TabIndex = 12;
+            this.txtSignUserName.TabIndex = 8;
             // 
             // lblSignUserName
             // 
             this.lblSignUserName.AutoSize = true;
             this.lblSignUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignUserName.Location = new System.Drawing.Point(53, 119);
+            this.lblSignUserName.Location = new System.Drawing.Point(76, 121);
             this.lblSignUserName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignUserName.Name = "lblSignUserName";
             this.lblSignUserName.Size = new System.Drawing.Size(157, 29);
-            this.lblSignUserName.TabIndex = 11;
+            this.lblSignUserName.TabIndex = 7;
             this.lblSignUserName.Text = "Kullanıcı Adı :";
             // 
             // txtSignPassword
@@ -341,7 +340,7 @@ namespace TakvimUygulamasi
             // 
             this.lblSignPassword.AutoSize = true;
             this.lblSignPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignPassword.Location = new System.Drawing.Point(53, 162);
+            this.lblSignPassword.Location = new System.Drawing.Point(158, 164);
             this.lblSignPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignPassword.Name = "lblSignPassword";
             this.lblSignPassword.Size = new System.Drawing.Size(75, 29);
@@ -356,18 +355,18 @@ namespace TakvimUygulamasi
             this.txtSignIdNo.MaxLength = 11;
             this.txtSignIdNo.Name = "txtSignIdNo";
             this.txtSignIdNo.Size = new System.Drawing.Size(247, 34);
-            this.txtSignIdNo.TabIndex = 8;
+            this.txtSignIdNo.TabIndex = 12;
             this.txtSignIdNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyNumber);
             // 
             // lblSignIdNo
             // 
             this.lblSignIdNo.AutoSize = true;
             this.lblSignIdNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignIdNo.Location = new System.Drawing.Point(53, 206);
+            this.lblSignIdNo.Location = new System.Drawing.Point(53, 207);
             this.lblSignIdNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignIdNo.Name = "lblSignIdNo";
             this.lblSignIdNo.Size = new System.Drawing.Size(180, 29);
-            this.lblSignIdNo.TabIndex = 7;
+            this.lblSignIdNo.TabIndex = 11;
             this.lblSignIdNo.Text = "T.C. Kimlik No :";
             // 
             // txtSignGSM
@@ -378,18 +377,18 @@ namespace TakvimUygulamasi
             this.txtSignGSM.MaxLength = 32;
             this.txtSignGSM.Name = "txtSignGSM";
             this.txtSignGSM.Size = new System.Drawing.Size(247, 34);
-            this.txtSignGSM.TabIndex = 6;
+            this.txtSignGSM.TabIndex = 14;
             this.txtSignGSM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlyNumber);
             // 
             // lblSignGSM
             // 
             this.lblSignGSM.AutoSize = true;
             this.lblSignGSM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignGSM.Location = new System.Drawing.Point(53, 249);
+            this.lblSignGSM.Location = new System.Drawing.Point(125, 250);
             this.lblSignGSM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignGSM.Name = "lblSignGSM";
             this.lblSignGSM.Size = new System.Drawing.Size(108, 29);
-            this.lblSignGSM.TabIndex = 5;
+            this.lblSignGSM.TabIndex = 13;
             this.lblSignGSM.Text = "Telefon :";
             // 
             // txtSignName
@@ -407,7 +406,7 @@ namespace TakvimUygulamasi
             // 
             this.lblSignName.AutoSize = true;
             this.lblSignName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSignName.Location = new System.Drawing.Point(53, 34);
+            this.lblSignName.Location = new System.Drawing.Point(179, 36);
             this.lblSignName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignName.Name = "lblSignName";
             this.lblSignName.Size = new System.Drawing.Size(54, 29);
@@ -424,7 +423,6 @@ namespace TakvimUygulamasi
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "loginScreen";
             this.Text = "Giriş Yap";
-            this.Load += new System.EventHandler(this.loginScreen_Load);
             this.tabUserLoginPage.ResumeLayout(false);
             this.tabLoginPage.ResumeLayout(false);
             this.tabLoginPage.PerformLayout();

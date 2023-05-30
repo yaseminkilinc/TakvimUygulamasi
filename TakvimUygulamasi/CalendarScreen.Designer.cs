@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.islemZmn1 = new System.Windows.Forms.Label();
             this.islemZamani = new System.Windows.Forms.DateTimePicker();
             this.olayBaslangic1 = new System.Windows.Forms.Label();
@@ -55,6 +56,19 @@
             this.time1730 = new System.Windows.Forms.Button();
             this.time1830 = new System.Windows.Forms.Button();
             this.time1930 = new System.Windows.Forms.Button();
+            this.hatirlatma1 = new System.Windows.Forms.Label();
+            this.chkHatirlatma = new System.Windows.Forms.CheckBox();
+            this.chkAlarm = new System.Windows.Forms.CheckBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.time0830_ = new System.Windows.Forms.Button();
+            this.time0930_ = new System.Windows.Forms.Button();
+            this.time1030_ = new System.Windows.Forms.Button();
+            this.time1430_ = new System.Windows.Forms.Button();
+            this.time1330_ = new System.Windows.Forms.Button();
+            this.time1230_ = new System.Windows.Forms.Button();
+            this.time1530_ = new System.Windows.Forms.Button();
+            this.time1630_ = new System.Windows.Forms.Button();
+            this.time1730_ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // islemZmn1
@@ -73,7 +87,7 @@
             this.islemZamani.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.islemZamani.Location = new System.Drawing.Point(179, 50);
             this.islemZamani.Name = "islemZamani";
-            this.islemZamani.Size = new System.Drawing.Size(200, 22);
+            this.islemZamani.Size = new System.Drawing.Size(164, 22);
             this.islemZamani.TabIndex = 1;
             // 
             // olayBaslangic1
@@ -81,7 +95,7 @@
             this.olayBaslangic1.AutoSize = true;
             this.olayBaslangic1.BackColor = System.Drawing.Color.Transparent;
             this.olayBaslangic1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.olayBaslangic1.Location = new System.Drawing.Point(41, 125);
+            this.olayBaslangic1.Location = new System.Drawing.Point(39, 90);
             this.olayBaslangic1.Name = "olayBaslangic1";
             this.olayBaslangic1.Size = new System.Drawing.Size(228, 25);
             this.olayBaslangic1.TabIndex = 2;
@@ -90,7 +104,7 @@
             // time09
             // 
             this.time09.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time09.Location = new System.Drawing.Point(43, 181);
+            this.time09.Location = new System.Drawing.Point(43, 134);
             this.time09.Name = "time09";
             this.time09.Size = new System.Drawing.Size(75, 23);
             this.time09.TabIndex = 3;
@@ -101,7 +115,7 @@
             // time10
             // 
             this.time10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time10.Location = new System.Drawing.Point(154, 181);
+            this.time10.Location = new System.Drawing.Point(154, 134);
             this.time10.Name = "time10";
             this.time10.Size = new System.Drawing.Size(75, 23);
             this.time10.TabIndex = 4;
@@ -112,7 +126,7 @@
             // time11
             // 
             this.time11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time11.Location = new System.Drawing.Point(268, 180);
+            this.time11.Location = new System.Drawing.Point(268, 134);
             this.time11.Name = "time11";
             this.time11.Size = new System.Drawing.Size(75, 23);
             this.time11.TabIndex = 5;
@@ -123,7 +137,7 @@
             // time15
             // 
             this.time15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time15.Location = new System.Drawing.Point(268, 226);
+            this.time15.Location = new System.Drawing.Point(268, 181);
             this.time15.Name = "time15";
             this.time15.Size = new System.Drawing.Size(75, 23);
             this.time15.TabIndex = 8;
@@ -134,7 +148,7 @@
             // time14
             // 
             this.time14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time14.Location = new System.Drawing.Point(154, 227);
+            this.time14.Location = new System.Drawing.Point(154, 181);
             this.time14.Name = "time14";
             this.time14.Size = new System.Drawing.Size(75, 23);
             this.time14.TabIndex = 7;
@@ -145,7 +159,7 @@
             // time13
             // 
             this.time13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time13.Location = new System.Drawing.Point(43, 227);
+            this.time13.Location = new System.Drawing.Point(43, 181);
             this.time13.Name = "time13";
             this.time13.Size = new System.Drawing.Size(75, 23);
             this.time13.TabIndex = 6;
@@ -156,7 +170,7 @@
             // time18
             // 
             this.time18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time18.Location = new System.Drawing.Point(268, 281);
+            this.time18.Location = new System.Drawing.Point(268, 227);
             this.time18.Name = "time18";
             this.time18.Size = new System.Drawing.Size(75, 23);
             this.time18.TabIndex = 11;
@@ -167,7 +181,7 @@
             // time17
             // 
             this.time17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time17.Location = new System.Drawing.Point(154, 281);
+            this.time17.Location = new System.Drawing.Point(154, 227);
             this.time17.Name = "time17";
             this.time17.Size = new System.Drawing.Size(75, 23);
             this.time17.TabIndex = 10;
@@ -178,7 +192,7 @@
             // time16
             // 
             this.time16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time16.Location = new System.Drawing.Point(43, 281);
+            this.time16.Location = new System.Drawing.Point(43, 227);
             this.time16.Name = "time16";
             this.time16.Size = new System.Drawing.Size(75, 23);
             this.time16.TabIndex = 9;
@@ -207,9 +221,9 @@
             "İş",
             "Özel",
             "Sağlık"});
-            this.olayinTipi.Location = new System.Drawing.Point(591, 46);
+            this.olayinTipi.Location = new System.Drawing.Point(590, 46);
             this.olayinTipi.Name = "olayinTipi";
-            this.olayinTipi.Size = new System.Drawing.Size(121, 26);
+            this.olayinTipi.Size = new System.Drawing.Size(186, 26);
             this.olayinTipi.TabIndex = 13;
             // 
             // olayAcikla1
@@ -217,7 +231,7 @@
             this.olayAcikla1.AutoSize = true;
             this.olayAcikla1.BackColor = System.Drawing.Color.Transparent;
             this.olayAcikla1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.olayAcikla1.Location = new System.Drawing.Point(206, 402);
+            this.olayAcikla1.Location = new System.Drawing.Point(473, 315);
             this.olayAcikla1.Name = "olayAcikla1";
             this.olayAcikla1.Size = new System.Drawing.Size(158, 25);
             this.olayAcikla1.TabIndex = 14;
@@ -226,9 +240,9 @@
             // aciklama
             // 
             this.aciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.aciklama.Location = new System.Drawing.Point(370, 364);
+            this.aciklama.Location = new System.Drawing.Point(478, 358);
             this.aciklama.Name = "aciklama";
-            this.aciklama.Size = new System.Drawing.Size(200, 107);
+            this.aciklama.Size = new System.Drawing.Size(298, 115);
             this.aciklama.TabIndex = 15;
             this.aciklama.Text = "";
             // 
@@ -248,7 +262,7 @@
             this.olayBitis1.AutoSize = true;
             this.olayBitis1.BackColor = System.Drawing.Color.Transparent;
             this.olayBitis1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.olayBitis1.Location = new System.Drawing.Point(473, 125);
+            this.olayBitis1.Location = new System.Drawing.Point(473, 90);
             this.olayBitis1.Name = "olayBitis1";
             this.olayBitis1.Size = new System.Drawing.Size(179, 25);
             this.olayBitis1.TabIndex = 17;
@@ -257,7 +271,7 @@
             // time1130
             // 
             this.time1130.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1130.Location = new System.Drawing.Point(591, 180);
+            this.time1130.Location = new System.Drawing.Point(591, 134);
             this.time1130.Name = "time1130";
             this.time1130.Size = new System.Drawing.Size(75, 23);
             this.time1130.TabIndex = 19;
@@ -268,7 +282,7 @@
             // time1030
             // 
             this.time1030.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1030.Location = new System.Drawing.Point(477, 181);
+            this.time1030.Location = new System.Drawing.Point(477, 134);
             this.time1030.Name = "time1030";
             this.time1030.Size = new System.Drawing.Size(75, 23);
             this.time1030.TabIndex = 18;
@@ -279,7 +293,7 @@
             // time1330
             // 
             this.time1330.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1330.Location = new System.Drawing.Point(701, 180);
+            this.time1330.Location = new System.Drawing.Point(701, 134);
             this.time1330.Name = "time1330";
             this.time1330.Size = new System.Drawing.Size(75, 23);
             this.time1330.TabIndex = 20;
@@ -290,7 +304,7 @@
             // time1530
             // 
             this.time1530.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1530.Location = new System.Drawing.Point(591, 226);
+            this.time1530.Location = new System.Drawing.Point(591, 181);
             this.time1530.Name = "time1530";
             this.time1530.Size = new System.Drawing.Size(75, 23);
             this.time1530.TabIndex = 22;
@@ -301,7 +315,7 @@
             // time1430
             // 
             this.time1430.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1430.Location = new System.Drawing.Point(477, 227);
+            this.time1430.Location = new System.Drawing.Point(477, 181);
             this.time1430.Name = "time1430";
             this.time1430.Size = new System.Drawing.Size(75, 23);
             this.time1430.TabIndex = 21;
@@ -312,7 +326,7 @@
             // time1630
             // 
             this.time1630.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1630.Location = new System.Drawing.Point(701, 227);
+            this.time1630.Location = new System.Drawing.Point(701, 181);
             this.time1630.Name = "time1630";
             this.time1630.Size = new System.Drawing.Size(75, 23);
             this.time1630.TabIndex = 23;
@@ -323,7 +337,7 @@
             // time1730
             // 
             this.time1730.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1730.Location = new System.Drawing.Point(477, 281);
+            this.time1730.Location = new System.Drawing.Point(477, 227);
             this.time1730.Name = "time1730";
             this.time1730.Size = new System.Drawing.Size(75, 23);
             this.time1730.TabIndex = 24;
@@ -334,7 +348,7 @@
             // time1830
             // 
             this.time1830.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1830.Location = new System.Drawing.Point(591, 281);
+            this.time1830.Location = new System.Drawing.Point(591, 227);
             this.time1830.Name = "time1830";
             this.time1830.Size = new System.Drawing.Size(75, 23);
             this.time1830.TabIndex = 25;
@@ -345,7 +359,7 @@
             // time1930
             // 
             this.time1930.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.time1930.Location = new System.Drawing.Point(701, 281);
+            this.time1930.Location = new System.Drawing.Point(701, 227);
             this.time1930.Name = "time1930";
             this.time1930.Size = new System.Drawing.Size(75, 23);
             this.time1930.TabIndex = 26;
@@ -353,12 +367,163 @@
             this.time1930.UseVisualStyleBackColor = true;
             this.time1930.Click += new System.EventHandler(this.time1930_Click);
             // 
+            // hatirlatma1
+            // 
+            this.hatirlatma1.AutoSize = true;
+            this.hatirlatma1.BackColor = System.Drawing.Color.Transparent;
+            this.hatirlatma1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.hatirlatma1.Location = new System.Drawing.Point(39, 315);
+            this.hatirlatma1.Name = "hatirlatma1";
+            this.hatirlatma1.Size = new System.Drawing.Size(169, 25);
+            this.hatirlatma1.TabIndex = 28;
+            this.hatirlatma1.Text = "Hatırlatma Zamanı";
+            this.hatirlatma1.Visible = false;
+            // 
+            // chkHatirlatma
+            // 
+            this.chkHatirlatma.AutoSize = true;
+            this.chkHatirlatma.BackColor = System.Drawing.Color.Transparent;
+            this.chkHatirlatma.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkHatirlatma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chkHatirlatma.Location = new System.Drawing.Point(43, 271);
+            this.chkHatirlatma.Name = "chkHatirlatma";
+            this.chkHatirlatma.Size = new System.Drawing.Size(207, 29);
+            this.chkHatirlatma.TabIndex = 38;
+            this.chkHatirlatma.Text = "Önceden Hatırlatma";
+            this.chkHatirlatma.UseVisualStyleBackColor = false;
+            this.chkHatirlatma.CheckedChanged += new System.EventHandler(this.chkHatirlatma_CheckedChanged);
+            // 
+            // chkAlarm
+            // 
+            this.chkAlarm.AutoSize = true;
+            this.chkAlarm.BackColor = System.Drawing.Color.Transparent;
+            this.chkAlarm.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkAlarm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chkAlarm.Location = new System.Drawing.Point(477, 271);
+            this.chkAlarm.Name = "chkAlarm";
+            this.chkAlarm.Size = new System.Drawing.Size(169, 29);
+            this.chkAlarm.TabIndex = 39;
+            this.chkAlarm.Text = "Sesli Hatırlatma";
+            this.chkAlarm.UseVisualStyleBackColor = false;
+            this.chkAlarm.CheckedChanged += new System.EventHandler(this.chkAlarm_CheckedChanged);
+            // 
+            // time0830_
+            // 
+            this.time0830_.Location = new System.Drawing.Point(43, 358);
+            this.time0830_.Name = "time0830_";
+            this.time0830_.Size = new System.Drawing.Size(75, 23);
+            this.time0830_.TabIndex = 29;
+            this.time0830_.Text = "08.30";
+            this.time0830_.UseVisualStyleBackColor = true;
+            this.time0830_.Visible = false;
+            this.time0830_.Click += new System.EventHandler(this.time0830__Click);
+            // 
+            // time0930_
+            // 
+            this.time0930_.Location = new System.Drawing.Point(154, 358);
+            this.time0930_.Name = "time0930_";
+            this.time0930_.Size = new System.Drawing.Size(75, 23);
+            this.time0930_.TabIndex = 30;
+            this.time0930_.Text = "09.30";
+            this.time0930_.UseVisualStyleBackColor = true;
+            this.time0930_.Visible = false;
+            this.time0930_.Click += new System.EventHandler(this.time0930__Click);
+            // 
+            // time1030_
+            // 
+            this.time1030_.Location = new System.Drawing.Point(268, 358);
+            this.time1030_.Name = "time1030_";
+            this.time1030_.Size = new System.Drawing.Size(75, 23);
+            this.time1030_.TabIndex = 31;
+            this.time1030_.Text = "10.30";
+            this.time1030_.UseVisualStyleBackColor = true;
+            this.time1030_.Visible = false;
+            this.time1030_.Click += new System.EventHandler(this.time1030__Click);
+            // 
+            // time1430_
+            // 
+            this.time1430_.Location = new System.Drawing.Point(268, 405);
+            this.time1430_.Name = "time1430_";
+            this.time1430_.Size = new System.Drawing.Size(75, 23);
+            this.time1430_.TabIndex = 34;
+            this.time1430_.Text = "14.30";
+            this.time1430_.UseVisualStyleBackColor = true;
+            this.time1430_.Visible = false;
+            this.time1430_.Click += new System.EventHandler(this.time1430__Click);
+            // 
+            // time1330_
+            // 
+            this.time1330_.Location = new System.Drawing.Point(154, 405);
+            this.time1330_.Name = "time1330_";
+            this.time1330_.Size = new System.Drawing.Size(75, 23);
+            this.time1330_.TabIndex = 33;
+            this.time1330_.Text = "13.30";
+            this.time1330_.UseVisualStyleBackColor = true;
+            this.time1330_.Visible = false;
+            this.time1330_.Click += new System.EventHandler(this.time1330__Click);
+            // 
+            // time1230_
+            // 
+            this.time1230_.Location = new System.Drawing.Point(43, 405);
+            this.time1230_.Name = "time1230_";
+            this.time1230_.Size = new System.Drawing.Size(75, 23);
+            this.time1230_.TabIndex = 32;
+            this.time1230_.Text = "12.30";
+            this.time1230_.UseVisualStyleBackColor = true;
+            this.time1230_.Visible = false;
+            this.time1230_.Click += new System.EventHandler(this.time1230__Click);
+            // 
+            // time1530_
+            // 
+            this.time1530_.Location = new System.Drawing.Point(43, 450);
+            this.time1530_.Name = "time1530_";
+            this.time1530_.Size = new System.Drawing.Size(75, 23);
+            this.time1530_.TabIndex = 35;
+            this.time1530_.Text = "15.30";
+            this.time1530_.UseVisualStyleBackColor = true;
+            this.time1530_.Visible = false;
+            this.time1530_.Click += new System.EventHandler(this.time1530__Click);
+            // 
+            // time1630_
+            // 
+            this.time1630_.Location = new System.Drawing.Point(154, 450);
+            this.time1630_.Name = "time1630_";
+            this.time1630_.Size = new System.Drawing.Size(75, 23);
+            this.time1630_.TabIndex = 36;
+            this.time1630_.Text = "16.30";
+            this.time1630_.UseVisualStyleBackColor = true;
+            this.time1630_.Visible = false;
+            this.time1630_.Click += new System.EventHandler(this.time1630__Click);
+            // 
+            // time1730_
+            // 
+            this.time1730_.Location = new System.Drawing.Point(268, 450);
+            this.time1730_.Name = "time1730_";
+            this.time1730_.Size = new System.Drawing.Size(75, 23);
+            this.time1730_.TabIndex = 37;
+            this.time1730_.Text = "17.30";
+            this.time1730_.UseVisualStyleBackColor = true;
+            this.time1730_.Visible = false;
+            this.time1730_.Click += new System.EventHandler(this.time1730__Click);
+            // 
             // CalendarScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TakvimUygulamasi.Properties.Resources.tabSignPage_BackgroundImage;
             this.ClientSize = new System.Drawing.Size(902, 553);
+            this.Controls.Add(this.chkAlarm);
+            this.Controls.Add(this.chkHatirlatma);
+            this.Controls.Add(this.time1730_);
+            this.Controls.Add(this.time1630_);
+            this.Controls.Add(this.time1530_);
+            this.Controls.Add(this.time1430_);
+            this.Controls.Add(this.time1330_);
+            this.Controls.Add(this.time1230_);
+            this.Controls.Add(this.time1030_);
+            this.Controls.Add(this.time0930_);
+            this.Controls.Add(this.time0830_);
+            this.Controls.Add(this.hatirlatma1);
             this.Controls.Add(this.time1930);
             this.Controls.Add(this.time1830);
             this.Controls.Add(this.time1730);
@@ -388,7 +553,6 @@
             this.Controls.Add(this.islemZmn1);
             this.Name = "CalendarScreen";
             this.Text = "CalendarScreen";
-            this.Load += new System.EventHandler(this.CalendarScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,5 +587,18 @@
         private System.Windows.Forms.Button time1730;
         private System.Windows.Forms.Button time1830;
         private System.Windows.Forms.Button time1930;
+        private System.Windows.Forms.Label hatirlatma1;
+        private System.Windows.Forms.CheckBox chkHatirlatma;
+        private System.Windows.Forms.CheckBox chkAlarm;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button time0830_;
+        private System.Windows.Forms.Button time0930_;
+        private System.Windows.Forms.Button time1030_;
+        private System.Windows.Forms.Button time1430_;
+        private System.Windows.Forms.Button time1330_;
+        private System.Windows.Forms.Button time1230_;
+        private System.Windows.Forms.Button time1530_;
+        private System.Windows.Forms.Button time1630_;
+        private System.Windows.Forms.Button time1730_;
     }
 }

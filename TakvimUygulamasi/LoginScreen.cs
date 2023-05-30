@@ -14,7 +14,7 @@ namespace TakvimUygulamasi
 {
     public partial class loginScreen : Form
     {
-        static string constring = ("Data Source=BEYZAYOLDAS;Initial Catalog = TakvimUygulamasi; Integrated Security = True");
+        static string constring = ("Data Source=DESKTOP-1LFMM0Q\\SQLEXPRESS;Initial Catalog=TakvimUygulamasi;Integrated Security=True");
         SqlConnection connect = new SqlConnection(constring);
         public loginScreen()
         {
@@ -64,7 +64,7 @@ namespace TakvimUygulamasi
             }
             else
             {
-                try        
+                try
                 {
                     int dataController = 0; // Kullanıcı var mı yok mu kontrolü
                     if (connect.State == ConnectionState.Closed)
@@ -179,16 +179,6 @@ namespace TakvimUygulamasi
             {
                 MessageBox.Show("Hata!!!" + ea.Message);
             }
-        }
-
-        private void loginScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabLoginPage_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
